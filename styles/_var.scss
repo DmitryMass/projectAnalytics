@@ -1,0 +1,156 @@
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+a,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+//  font size \ line-heigth ;
+$lg: 50px;
+$lg40: 40px;
+$md30: 30px;
+$md-sm18: 18px;
+$sm16: 16px;
+$sm-min14: 14px;
+$md26: 26px;
+// lh
+$lh: 150%;
+$lh-120: 120%;
+$lh-140: 140%;
+$lh-16: 16px;
+$lh-19: 19px;
+$lh-47: 47px;
+$lh-30: 30px;
+// COlors
+
+$white: white;
+$black: black;
+$blue-grey: #8794ba;
+$pink: #ef2a82;
+$md-blue: #2a407c;
+$dark-blue: #172755;
+$ligth-grey: #f8f9ff;
+$night-blue: #0f1f4b;
+// btn / selectors
+
+.btn-pink {
+  padding: 10px 55px;
+  font-size: $sm16;
+  line-height: $lh-19;
+  color: $white;
+  background: $pink;
+  border-radius: 68px;
+  &:hover {
+    color: $white;
+    box-shadow: inset 0px 0 8px $white;
+  }
+}
+.btn-transparent {
+  background: transparent;
+  padding: 10px 55px;
+  border: 1px solid #465b95;
+  border-radius: 68px;
+  font-size: $sm16;
+  line-height: $lh-19;
+  color: $blue-grey;
+  &:hover {
+    color: $white;
+    box-shadow: inset 0px 0 8px $white;
+  }
+}
+.nav-link {
+  font-size: $sm16;
+  line-height: $lh-19;
+  color: $blue-grey;
+}
+.h1 {
+  font-size: $lg;
+  line-height: $lh-120;
+  color: $white;
+  font-weight: 700;
+  color: $dark-blue;
+  &-title {
+    color: $white;
+    padding-bottom: 15px;
+    @media screen and (max-width: 1200px) {
+      font-size: $md30;
+      line-height: $lh-120;
+    }
+  }
+}
+.h2 {
+  font-size: $lg40;
+  line-height: $lh-47;
+  font-weight: 700;
+  color: $dark-blue;
+  &-title {
+    padding-bottom: 30px;
+    @media screen and (max-width: 576px) {
+      font-size: $md30;
+      line-height: 35px;
+      padding-bottom: 20px;
+    }
+  }
+}
+.h3 {
+  font-size: $md30;
+  line-height: $lh-140;
+  color: $white;
+  font-weight: bold;
+}
+.p1-body {
+  font-size: $md-sm18;
+  line-height: $lh;
+  color: $blue-grey;
+}
+.p2-body {
+  font-size: $sm16;
+  line-height: $lh-140;
+  color: $blue-grey;
+}
+
+.p {
+  &-txt {
+    padding-bottom: 45px;
+    @media screen and (max-width: 992px) {
+      font-size: $sm16;
+      padding-bottom: 35px;
+    }
+  }
+  &-feautures {
+    padding: 25px 0px 15px 0px;
+    font-weight: bold;
+    color: $dark-blue;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+}
+.p2-txt {
+  @media screen and (max-width: 576px) {
+    font-size: $sm-min14;
+    line-height: $lh-140;
+  }
+}

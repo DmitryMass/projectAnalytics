@@ -1,0 +1,115 @@
+.feautures {
+  padding: 45px 0px;
+  &-main {
+    text-align: center;
+    @media screen and (max-width: 576px) {
+      text-align: left;
+    }
+    & > .p1-body {
+      padding-bottom: 80px;
+      @media screen and (max-width: 576px) {
+        padding-bottom: 40px;
+        font-size: $sm-min14;
+        line-height: $lh-140;
+      }
+    }
+  }
+  &-boxes {
+    text-align: center;
+    margin-bottom: 100px;
+    gap: 20px;
+    @media screen and (max-width: 576px) {
+      gap: 35px;
+      margin-bottom: 70px;
+    }
+  }
+  &-info {
+    max-width: 440px;
+    @media screen and (max-width: 1200px) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 440px;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 335px;
+    }
+    & > .p1-body {
+      @media screen and (max-width: 576px) {
+        font-size: $sm-min14;
+        line-height: $lh;
+      }
+    }
+  }
+  &-box {
+    & > .box-first,
+    & > .box-third {
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
+    }
+    & > .box-first,
+    & > .box-second {
+      @media screen and(max-width:1200px) {
+        margin-bottom: 60px;
+      }
+      @media screen and(max-width:576px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  &-img {
+    padding-top: 20px;
+    @media screen and (max-width: 576px) {
+      padding: 0;
+    }
+  }
+}
+//
+.col-sm {
+  @media screen and (max-width: 576px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    text-align: left;
+  }
+}
+.p-width {
+  display: none;
+  @media screen and (max-width: 576px) {
+    display: block;
+    padding: 0 0 10px 0;
+  }
+}
+//
+.img {
+  &-first,
+  &-second,
+  &-third {
+    border-radius: 35px;
+    background: $white;
+    box-shadow: 2px 2px 4px grey;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 440px;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 335px;
+    }
+  }
+  &-first {
+    padding: 40px;
+  }
+  &-second {
+    padding: 30px;
+  }
+  &-third {
+    padding: 35px;
+  }
+}
+///
+.box-second {
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+}

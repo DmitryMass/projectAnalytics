@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "./var";
+@import "./about";
+@import "./feautures";
+@import "./footer";
+
+// .main-wrap {
+//   min-height: 100%;
+// }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: $ligth-grey;
+}
+* {
+  box-sizing: border-box;
+}
+
+////// MIXINS
+@mixin container($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+.container {
+  padding: 0 15px;
+  @media screen and (max-width: 576px) {
+    padding: 0 20px;
+  }
+}
+.container-main {
+  @include container(1180px);
+  @media screen and (max-width: 576px) {
+    padding: 0 20px;
+  }
+}
+//// flex-container
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  @media screen and (max-width: 992px) {
+    width: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+.flex-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.flex-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+}
+//
+.fa-brands {
+  font-size: $md26;
+  margin: 0 20px;
+  color: $blue-grey;
+  &:hover {
+    color: $white;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 0 10px;
+  }
+}
+.fa-instagram {
+  margin-right: 0px;
+}
